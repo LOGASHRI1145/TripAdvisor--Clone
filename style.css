@@ -1,0 +1,700 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trip Sans", Arial, sans-serif;
+    /*Fallback fonts for compatibility*/
+    /* margin: 42.400px; */
+
+}
+
+
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: sticky;
+    background: white;
+    top: 0px;
+    z-index: 3;
+    /* why z index 3 bcoz i have given z index 2 for bottom black shading for images */
+    /* so the more the z index the more it is layered front */
+}
+
+.navbar P {
+    font-weight: bold;
+}
+
+.navbar__s1 {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__s1 img {
+    height: 40px;
+    width: auto;
+}
+
+.navbar__s1 p {
+    font-family: Trip Sans Medium;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.navbar__s2 {
+    display: flex;
+    gap: 10px;
+}
+.navbar__s2 p{
+    padding: 15px;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+    cursor: pointer;
+ }  
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.INR {
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.INR:hover, .navbar__s2 p:hover{
+
+    border-radius: 25px;
+    background: #F2F2F2;
+}
+
+.INR p {
+    padding: 5px;
+    border-left: solid #E0E0E0 2px;
+
+}
+
+.s3__sign-in {
+    padding: 15px;
+    color: white;
+    border: solid black 1px;
+    border-radius: 25px;
+    background: black;
+    cursor: pointer;
+}
+
+.s3__sign-in:hover ,.learn-more-button:hover {
+    background: rgb(33, 32, 32);
+}
+
+.whereto {
+    margin-top: 40px;
+    font-family: Trip Sans Ultra;
+    padding: 10px;
+    font-size: 54px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navlists {
+    display: flex;
+    gap: 25px;
+    padding: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #403f3f;
+}
+
+.navlists div {
+    display: flex;
+    gap: 4px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border: solid transparent 2px;
+    /* why we set border invisible above 
+    bcoz while hovering if border is added newly then the elements down will start shaking */
+}
+
+.navlists div:hover {
+    border-bottom: solid #545454 2px;
+    color: #585757;
+}
+
+.search-bar-division {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.search-bar {
+    height: 60px;
+    /* inc the size (height) of box */
+    padding-left: 20px;
+    padding-right: 8px;
+    border: #545454;
+    border-radius: 30px;
+    display: flex;
+    width: 780px;
+    /*if you give percentage 60% here it will be responsive*/
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    align-items: center;
+}
+
+.search-bar__s1 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.search-bar__s1 input {
+    font-size: 16px;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.search-bar__s1 input:focus {
+    outline: none;
+}
+
+.search-bar__s2 {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 40px;
+    background-color: #34E0A1;
+    cursor: pointer;
+}
+
+.search-bar__s2 p {
+    font-weight: bold;
+}
+
+.banner{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #d4dff7, #dcc8ff);
+    border-radius: 15px;
+    position: relative;
+}
+
+.banner img{
+    width: 1200px;
+}
+
+.banner__first-line{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 12px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.beta{
+    padding: 5px;
+    border: solid white 1px;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.banner__content{
+    position: absolute;
+    top: 90px;
+    left: 75px;
+    color: #301D49;
+    font-size: 22px;
+    font-weight: bold;
+    width: 500px;
+}
+
+.banner__big-font{
+    font-family: Trip Sans Medium;
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.trip-with-AI{
+    margin-top: 20px;
+    font-size: 14px;
+    color: white;
+    background-color: #301D49;
+    padding: 15px 20px;
+    /* padding top-bottom , left-right */
+    border-radius: 3cqb;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.trip-with-AI:hover{
+    background-color: #52327C;
+}
+
+.destinations {
+    padding: 20px;
+    padding-top: 70px;
+    max-width: 1215px;
+    margin: 0 auto;
+}
+
+.destinations h2,
+.holiday-section h2 {
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.destinations p,
+.holiday-section p {
+    color: #333333;
+    padding: 10px;
+}
+
+
+.destinations__container {
+    padding: 10px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* cards go next next line while minimzed screen */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.destination-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    width: 280px;
+    /* flex-basis: 24%; */
+    /* overflow prevents overflow of content */
+}
+
+.destination-card img {
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.destination-card img:hover {
+    filter: brightness(1.09);
+    /* highlights when touched */
+}
+
+.destination-card p {
+    position: absolute;
+    bottom: 10px;
+    /* Adjust the text's vertical position */
+    left: 2px;
+    /* Adjust the text's horizontal position */
+    color: white !important;
+    font-family: Trip Sans Medium;
+    font-size: 30px;
+    /* Adjust font size*/
+    font-weight: 550;
+    z-index: 2;
+    /* Ensures text appears above the image */
+}
+
+.destination-card::before {
+    border-radius: 10px;
+    content: "";
+    /* Adds a black layer */
+    position: absolute;
+    bottom: 0;
+    /* Restricts the shadow to the bottom of the card */
+    left: 0;
+    width: 100%;
+    height: 40%;
+    /* Adjust this to control the shadow's height */
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    /* Fades into black */
+    z-index: 1;
+    /* Places the shadow below the text */
+    pointer-events: none;
+    /* Prevents the layer from interfering with clicks */
+}
+
+.review {
+    padding: 20px;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.review h2 {
+    padding-bottom: 10px;
+}
+
+.review p {
+    color: #333333;
+    padding-bottom: 15px;
+}
+
+.review__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.review-card {
+    width: 380px;
+}
+
+.review-card img {
+    border-radius: 5px;
+    /* height: 250px; */
+    cursor: pointer;
+    width: 100%;
+}
+
+.review-card img:hover {
+    filter: brightness(1.09);
+}
+
+.line1 {
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.line2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.line3,
+.line4 {
+    padding: 0px !important;
+    color: rgb(91, 91, 91) !important;
+}
+
+.review-card p {
+    text-align: center;
+}
+
+.explore {
+    margin-top: 30px;
+    background-color: #F2F1EC;
+    padding: 20px 0px;
+
+}
+
+.explore-content {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.explore h2 {
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+}
+
+.explore__container {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.explore-card {
+
+    /* flex: 1 1 calc(33.333% - 20px); */
+    max-width: 350px;
+    margin: auto;
+
+}
+
+.explore-card img {
+    border-radius: 5px;
+    width: 110%;
+    height: 250px;
+    /* height auto will help in reducing img size while reducing screen size */
+    cursor: pointer;
+}
+
+.explore-card img:hover {
+    filter: brightness(1.09);
+}
+
+.explore-card p {
+    padding: 10px;
+    padding-top: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.trip-section {
+    padding: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trip-section h1 {
+    font-family: Trip Sans Medium;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.trip-section p {
+    font-family: Trip Sans Medium;
+    padding-top: 20px;
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.trip-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.trip-card {
+    position: relative;
+    width: 280px;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.trip-card:hover {
+    filter: brightness(1.09);
+}
+
+.trip-card img {
+    width: 100%;
+    height: 280px;
+    border-radius: 10px;
+}
+
+.trip-card p {
+    font-family: Trip Sans Medium;
+    position: absolute;
+    bottom: 20px;
+    left: 12px;
+    margin: 0;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    /* Ensure the text stays on top */
+}
+
+.trip-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    /* Adjust based on desired shadow size */
+    background: linear-gradient(to top, black, transparent);
+    z-index: 1;
+    /* Place shadow beneath text */
+}
+
+.holiday-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wanderer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* this will align the right side div box to centre as well */
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 60px;
+    background: #F2ECF9;
+    text-align: center;
+}
+
+.wanderer__content{
+    /* background-color: #a6aaa8; */
+    padding: 80px;
+}
+
+.wanderer__content__first-line{
+    display: flex;
+    align-items: center;
+    /* to make it in a straight line (vertically)*/
+    justify-content: center;
+    /* to push it inside like other contents are in centre */
+    /* as flex is used => flex-direction => row(horizontal) justify content goes well with flex-direction */
+    padding: 10px;
+}
+
+.wanderer__content__first-line img{
+    height: 30px;
+    width: auto;
+}
+
+.wanderer__content h1{
+    padding: 10px;
+}
+
+.wanderer__content p{
+    padding: 15px;
+}
+
+.learn-more-button{
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    background: black;
+    border-radius: 30px;
+    margin: auto;     /* this pushes button to centre */
+    cursor: pointer;
+}
+
+.footer{
+    /* max-width: 1200px; */
+    background-color: #F2F2F2;
+    margin-top: 50px;
+
+}
+
+.footer-up{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+
+.footer__left{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+}
+
+.footer p{
+    padding: 5px;
+}
+
+.pointers{
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pointers:hover{
+    text-decoration: underline;
+    color: #6e6e6e;
+}
+
+.footer__bottom{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 175px;
+    padding-right: 175px;
+    gap: 10px;
+    align-items: center;
+}
+.bottom-left__up{
+    display: flex;
+    gap: 10px;
+}
+.footer-logo img{
+    height:40px;
+}
+.right-to-footer-logo{
+    padding-bottom: 5px;
+}
+.right-to-footer-logo p, .bottom-left__down{
+    font-size: 12px;
+    color:#333333 ;
+}
+
+.right-to-footer-logo h4{
+    color: #424040;
+    padding-bottom: 5px;
+}
+
+
+.dropdowns{
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+.dropdown1, .dropdown2{
+    padding: 7px;
+    width: 180px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    border: solid #E0E0E0 2px;
+    cursor: pointer;
+}
+
+.dropdown1:hover, .dropdown2:hover{
+    background-color: #F2F2F2;
+}
+
+.bottom-right {
+ /* Align content to the right */
+    text-align: right; 
+    gap: 20px; /* Adjust spacing between dropdowns and icons */
+    padding-right: 20px; /* Ensure some space between content and right edge */
+}
+
+.icons i{
+    font-size: 20px;
+    padding-left: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .trip-card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .trip-card {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
