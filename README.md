@@ -39,7 +39,7 @@ HTML – For structuring web pages and content.
 CSS – For styling, layout, animations, and responsiveness.
 
 🌍 Live Demo:
-Visit the Website :
+Visit the Website : https://logashri1145.github.io/TripAdvisor--Clone/
 
 Future Enhancements:
 1.Add a backend for user authentication and reviews. Implement a rating system for hotels, restaurants, and attractions.111
